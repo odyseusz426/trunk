@@ -7,10 +7,15 @@ use React\Http\Message\Response;
 class ProductLookupController
 {
     private $repository;
+    private $dataProvider;
 
-    public function __construct(ProductRepositoryInterface $repository)
+    public function __construct(
+        ProductRepositoryInterface $repository,
+        ProductLookupDataProviderInterface $dataProvider
+    )
     {
         $this->repository = $repository;
+        $this->dataProvider = $dataProvider;
     }
 
     public function __invoke(ServerRequestInterface $request)
@@ -23,11 +28,14 @@ class ProductLookupController
                 "Product not found\n"
             )->withStatus(Response::STATUS_NOT_FOUND);
         }
-        $data = [
+        /*$data = [
             "name" => $product->title,
             "description" => $product->description,
             "price" => $product->price,
-        ];
+        ];*/
+
+        $data = $this->dataProvider->getData($product);
+
 
         return Response::json($data);
     }

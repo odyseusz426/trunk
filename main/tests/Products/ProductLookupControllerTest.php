@@ -8,10 +8,20 @@ use Tbd\Main\Products\ProductLookupController;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use React\Http\Message\ServerRequest;
+use Tbd\Main\Products\ProductLookupDataProviderInterface;
+use Tbd\Main\Products\ProductLookupStandardDataProvider;
 use Tbd\Main\Products\ProductRepositoryInterface;
+use Tbd\Main\Recommendations\RecommendationsServiceInterface;
 
 class ProductLookupControllerTest extends TestCase
 {
+    private $dataProvider;
+
+    public function setUp(): void
+    {
+        $this->dataProvider = new ProductLookupStandardDataProvider();
+    }
+
     public function testControllerReturnsValidResponseWithRecommendationsDisabled()
     {
         if(FeatureFlag::isEnabled('show_recommendations_on_product_lookup')){
@@ -27,7 +37,7 @@ class ProductLookupControllerTest extends TestCase
         $stub->method('findProduct')
             ->will($this->returnValueMap([["3", $product]]));
 
-        $controller = new ProductLookupController($stub);
+        $controller = new ProductLookupController($stub, $this->dataProvider);
 
         $response = $controller($request);
 
@@ -40,6 +50,7 @@ class ProductLookupControllerTest extends TestCase
     "description": "description",
     "price": 100.0
 }';
+
         $this->assertEquals($output, (string) trim($response->getBody()));
     }
 
@@ -58,7 +69,7 @@ class ProductLookupControllerTest extends TestCase
         $stub->method('findProduct')
             ->will($this->returnValueMap([["3", $product]]));
 
-        $controller = new ProductLookupController($stub);
+        $controller = new ProductLookupController($stub, $this->dataProvider);
 
         $recoStub = $this->createMock(RecommendationsServiceInterface::class);
         $recoStub->method('getRecommendations')
@@ -82,7 +93,7 @@ class ProductLookupControllerTest extends TestCase
 }';
         $this->assertEquals($output, (string) trim($response->getBody()));
     }
-    
+
     public function testControllerReturns404Response()
     {
         $request = new ServerRequest('GET', 'http://example.com/products/3');
@@ -92,7 +103,9 @@ class ProductLookupControllerTest extends TestCase
         $stub->method('findProduct')
             ->will($this->returnValueMap([["3", null]]));
 
-        $controller = new ProductLookupController($stub);
+
+
+        $controller = new ProductLookupController($stub, $this->dataProvider);
 
         $response = $controller($request);
 

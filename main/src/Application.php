@@ -5,6 +5,7 @@ namespace Tbd\Main;
 use FrameworkX\App;
 use FrameworkX\Container;
 use React\Http\Message\Response;
+use Tbd\Main\Products\ProductLookupStandardDataProvider;
 use Tbd\Main\Products\ProductRepository;
 
 class Application
@@ -17,8 +18,8 @@ class Application
             Products\ProductsListController::class => function (ProductRepository $repository) {
                 return new Products\ProductsListController($repository);
             },
-            Products\ProductLookupController::class => function (ProductRepository $repository) {
-                return new Products\ProductLookupController($repository);
+            Products\ProductLookupController::class => function (ProductRepository $repository, ProductLookupStandardDataProvider $dataProvider) {
+                return new Products\ProductLookupController($repository, $dataProvider);
             }
         ]);
 
