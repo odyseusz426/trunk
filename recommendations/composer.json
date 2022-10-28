@@ -1,0 +1,23 @@
+{
+  "name": "jedi-pl/trunk-based-development-feature-flags-recommendations-app",
+  "autoload": {
+    "psr-4": {
+      "Tbd\\Recommendations\\": [
+        "src/"
+      ]
+    },
+    "classmap": [
+      "src/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "clue/framework-x": "dev-main"
+  },
+  "config": {
+    "platform": {
+      "php": "8.1"
+    }
+  }
+}

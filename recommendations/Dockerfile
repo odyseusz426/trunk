@@ -7,7 +7,6 @@ RUN mkdir -p $APP_DIR
 FROM os as build
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 RUN apt-get update && apt-get --yes install git
-RUN apt-get --yes install libcurl4-openssl-dev && docker-php-ext-install curl
 COPY . $APP_DIR
 WORKDIR $APP_DIR
 RUN composer -n install

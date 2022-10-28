@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 cd main
 composer install
@@ -14,6 +14,7 @@ if [ $ret != 0 ]
 then
     exit $ret
 fi
+
 cd ..
 
 docker-compose build

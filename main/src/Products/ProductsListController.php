@@ -20,10 +20,13 @@ class ProductsListController
 
         $data = [];
         foreach($products as $product) {
-            $data[] = [
+            $row = [
                 "id" => $product->id,
-                "name" => $product->title
+                "name" => $product->title,
+                "description" => $product->description,
+                "price" => $product->price
             ];
+            $data[] = $row;
         }
 
         return Response::json($data);

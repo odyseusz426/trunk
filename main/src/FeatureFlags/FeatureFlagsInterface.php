@@ -1,5 +1,4 @@
 <?php
-
 namespace Tbd\Main\FeatureFlags;
 
 interface FeatureFlagsInterface

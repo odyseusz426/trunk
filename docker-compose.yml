@@ -2,12 +2,23 @@ version: '3'
 
 services:
   php-main:
+    links:
+      - php-rec
     container_name: tbd-main
     build: ./main
     environment:
       X_LISTEN: 0.0.0.0:8181
-      FEATURE_FLAG_SHOW_PRODUCT_DETAILS_ON_LIST: 1
+      RECOMMENDATIONS_SERVICE_URL: http://php-rec:8182
     working_dir: /app/public
     ports:
       - 8181:8181
+    restart: always
+  php-rec:
+    container_name: tbd-recommendations
+    build: ./recommendations
+    environment:
+      X_LISTEN: 0.0.0.0:8182
+    working_dir: /app/public
+    ports:
+      - 8182:8182
     restart: always

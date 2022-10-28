@@ -13,7 +13,8 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "clue/framework-x": "dev-main"
+    "clue/framework-x": "dev-main",
+    "guzzlehttp/guzzle": "^7.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.5"

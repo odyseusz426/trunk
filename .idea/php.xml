@@ -2,121 +2,52 @@
 <project version="4">
   <component name="PhpIncludePathManager">
     <include_path>
-      <path value="$PROJECT_DIR$/main/vendor/react/promise" />
-      <path value="$PROJECT_DIR$/main/vendor/fig/http-message-util" />
-      <path value="$PROJECT_DIR$/main/vendor/react/promise-timer" />
-      <path value="$PROJECT_DIR$/main/vendor/react/promise-stream" />
-      <path value="$PROJECT_DIR$/main/vendor/react/socket" />
-      <path value="$PROJECT_DIR$/main/vendor/react/stream" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/code-unit" />
-      <path value="$PROJECT_DIR$/main/vendor/react/cache" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/main/vendor/react/http" />
-      <path value="$PROJECT_DIR$/main/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/main/vendor/react/dns" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/main/vendor/react/async" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/cli-parser" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/lines-of-code" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/main/vendor/evenement/evenement" />
       <path value="$PROJECT_DIR$/main/vendor/phpunit/php-invoker" />
-      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/main/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/main/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/main/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/main/vendor/react/event-loop" />
-      <path value="$PROJECT_DIR$/main/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/main/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/main/vendor/clue/framework-x" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/main/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/main/vendor/composer" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/complexity" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/main/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/main/vendor/react/http" />
+      <path value="$PROJECT_DIR$/main/vendor/react/promise" />
       <path value="$PROJECT_DIR$/main/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/main/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/main/vendor/nikic/fast-route" />
-      <path value="$PROJECT_DIR$/main/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/main/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/main/vendor/react/promise-stream" />
+      <path value="$PROJECT_DIR$/main/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/main/vendor/react/promise-timer" />
+      <path value="$PROJECT_DIR$/main/vendor/react/async" />
+      <path value="$PROJECT_DIR$/main/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/main/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/main/vendor/ringcentral/psr7" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/main/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/main/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/main/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/main/vendor/react/dns" />
+      <path value="$PROJECT_DIR$/main/vendor/react/cache" />
+      <path value="$PROJECT_DIR$/main/vendor/clue/framework-x" />
+      <path value="$PROJECT_DIR$/main/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/main/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/main/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/main/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/main/vendor/composer" />
     </include_path>
-  </component>
-  <component name="PhpInterpreters">
-    <interpreters>
-      <interpreter id="20fcfb4a-5419-4e39-bb04-f1907af64c00" name="php-main" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
-        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="php-main" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
-          <type_data command="RUN" />
-          <dockerComposeConfigurationPaths>
-            <item value="$PROJECT_DIR$/docker-compose.yml" />
-          </dockerComposeConfigurationPaths>
-          <envs />
-        </remote_data>
-      </interpreter>
-    </interpreters>
-  </component>
-  <component name="PhpInterpretersPhpInfoCache">
-    <phpInfoCache>
-      <interpreter name="php-main">
-        <phpinfo binary_type="PHP" php_cgi="/usr/local/bin/php-cgi" php_cli="/usr/local/bin/php" path_separator=":" version="8.1.5">
-          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-pcntl.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini</additional_php_ini>
-          <configuration_file />
-          <configuration_options>
-            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
-          </configuration_options>
-          <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="3.1.4">
-              <debug_extensions />
-            </debugger_info>
-          </debuggers>
-          <loaded_extensions>
-            <extension name="Core" />
-            <extension name="PDO" />
-            <extension name="Phar" />
-            <extension name="Reflection" />
-            <extension name="SPL" />
-            <extension name="SimpleXML" />
-            <extension name="ctype" />
-            <extension name="curl" />
-            <extension name="date" />
-            <extension name="dom" />
-            <extension name="fileinfo" />
-            <extension name="filter" />
-            <extension name="ftp" />
-            <extension name="hash" />
-            <extension name="iconv" />
-            <extension name="json" />
-            <extension name="libxml" />
-            <extension name="mbstring" />
-            <extension name="mysqli" />
-            <extension name="mysqlnd" />
-            <extension name="openssl" />
-            <extension name="pcntl" />
-            <extension name="pcre" />
-            <extension name="pdo_sqlite" />
-            <extension name="posix" />
-            <extension name="readline" />
-            <extension name="session" />
-            <extension name="sodium" />
-            <extension name="sqlite3" />
-            <extension name="standard" />
-            <extension name="tokenizer" />
-            <extension name="xdebug" />
-            <extension name="xml" />
-            <extension name="xmlreader" />
-            <extension name="xmlwriter" />
-            <extension name="zlib" />
-          </loaded_extensions>
-        </phpinfo>
-      </interpreter>
-    </phpInfoCache>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
