@@ -11,7 +11,7 @@ use Tbd\Main\Products\ProductsListController;
 
 class ProductListControllerTest extends TestCase
 {
-    public function testControllerReturnsValidResponse()
+    public function testControllerReturnsValidResponseWithDetailsDisabled()
     {
         $request = new ServerRequest('GET', 'http://example.com/products/');
 
