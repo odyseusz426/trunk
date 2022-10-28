@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  php-main:
+    container_name: tbd-main
+    build: ./main
+    environment:
+      X_LISTEN: 0.0.0.0:8181
+    working_dir: /app/public
+    ports:
+      - 8181:8181
+    restart: always

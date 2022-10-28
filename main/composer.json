@@ -1,0 +1,31 @@
+{
+  "name": "jedi-pl/trunk-based-development-feature-flags-main-app",
+  "autoload": {
+    "psr-4": {
+      "Tbd\\Main\\": [
+        "src/"
+      ]
+    },
+    "classmap": [
+      "src/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "clue/framework-x": "dev-main"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "config": {
+    "platform": {
+      "php": "8.1"
+    }
+  },
+  "scripts": {
+    "tests": [
+      "vendor/phpunit/phpunit/phpunit -v --testdox-html=tests/_output/report.html tests --bootstrap tests/bootstrap.php"
+    ]
+  }
+}
